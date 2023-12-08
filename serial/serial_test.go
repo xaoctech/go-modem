@@ -11,7 +11,7 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/require"
-	"github.com/warthog618/modem/serial"
+	"github.com/xaoctech/go-modem/serial"
 )
 
 func modemExists(name string) func(t *testing.T) {

@@ -12,11 +12,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/warthog618/modem/at"
-	"github.com/warthog618/modem/info"
 	"github.com/warthog618/sms"
 	"github.com/warthog618/sms/encoding/pdumode"
 	"github.com/warthog618/sms/encoding/tpdu"
+	"github.com/xaoctech/go-modem/at"
+	"github.com/xaoctech/go-modem/info"
 )
 
 // GSM modem decorates the AT modem with GSM specific functionality.
@@ -72,7 +72,6 @@ func (o encoderOption) applyOption(g *GSM) {
 
 // WithEncoderOption applies the encoder option when converting from text
 // messages to SMS TPDUs.
-//
 func WithEncoderOption(eo sms.EncoderOption) Option {
 	return encoderOption{eo}
 }
